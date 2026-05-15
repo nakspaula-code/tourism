@@ -1,0 +1,77 @@
+body{
+    margin:0;
+    font-family:Arial;
+    background:#f4f4f4;
+}
+
+header{
+    background:green;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+nav{
+   background:black;
+   padding:50px;
+   text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:10px;
+}
+
+.hero{
+    text-align:center;
+    padding:50px;
+    background:lightgreen;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    padding:20px;
+}
+
+.card{
+    background:white;
+    width:250px;
+    padding:15px;
+    border-radius:10px;
+    text-align:center;
+}
+
+.card img{
+    width:100%;
+    border-radius:10px;
+}
+
+footer{
+    background:black;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+div{
+   width:100px;
+   height:100px;
+   background:red;
+   transition:width 2s,height 4s;}
+div:hover{
+   width:300px;
+
+/*The animation code*/
+  @keyframes example{
+  from{background-color:red}
+  to{background-color:yellow}
+}
+/*The element to apply the animation to*/
+div{width:100px;
+   height:100px;
+   background-color:red;
+   animation-name:example;
+   animation-duration:4s;
